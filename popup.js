@@ -1,10 +1,12 @@
-function processViewstate(viewstate){
+
+function processViewstate(viewstate, generator){
   console.log("Viewstate: " + viewstate);
   var viewstateDIV = document.getElementById("decoded_viewstate");
   if(viewstate == "NOT FOUND"){
     viewstateDIV.value = "Viewstate not found"
   } else {
     viewstateDIV.value = viewstate;
+    generatorBackend = generator;
   }
 }
 
@@ -61,6 +63,8 @@ function decodeViewstateBtn() {
           tree = buildTree(c);
     }
   }
+  
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {

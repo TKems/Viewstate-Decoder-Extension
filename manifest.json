@@ -14,5 +14,10 @@
            "32": "icon/icon-32.png",
            "48": "icon/icon-48.png",
            "64": "icon/icon-64.png",
-          "128": "icon/icon-128.png" }
+          "128": "icon/icon-128.png" },
+  "web_accessible_resources": [
+    {
+    "resources": ["valkeys.txt"],
+    "matches": ["https://*/*"]
+  }]
 }
